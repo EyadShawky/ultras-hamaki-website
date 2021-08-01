@@ -1,0 +1,1 @@
+let aboutOffset=$("#nav-color").offset().top;$(window).scroll(function(){let n=$(window).scrollTop();n>aboutOffset?($("#main-nav").css("backgroundColor","rgba(255,255,255)"),$("#btnUp").fadeIn(500)):($("#main-nav").css("backgroundColor","transparent"),$("#btnUp").fadeout(500))});$("#btnUp").click(function(){$("html,body").animate({scrollTop:0},2e3)})
